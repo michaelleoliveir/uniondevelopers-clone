@@ -1,4 +1,11 @@
-const Cards = ({titulo, texto}) => {
+import React, { FC } from 'react';
+
+interface CardsProps {
+    titulo: string;
+    texto: string;
+}
+
+const Cards: FC<CardsProps> = ({ titulo, texto }) => {
     return (
         <div className="shadow rounded-xl">
             <h3 className="text-3xl font-bold text-center rounded-b-none bg-gradient-to-r from-purple-600 to-blue-500 p-7 rounded-xl hover:bg-white">{titulo}</h3>

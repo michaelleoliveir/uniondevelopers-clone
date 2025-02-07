@@ -1,4 +1,13 @@
-const Item = ({ img, titulo, texto, reverse = false }) => {
+import React, { FC } from 'react';
+
+interface ItemProps {
+    img: string;
+    titulo: string;
+    texto: string;
+    reverse?: boolean;
+}
+
+const Item: FC<ItemProps> = ({ img, titulo, texto, reverse = false }) => {
     return (
         <div className={`mt-5 flex flex-col sm:flex-row items-center text-center w-full gap-4 ${reverse ? "sm:flex-row-reverse sm:justify-end lg:ml-[15rem]" : "sm:justify-start lg:mr-[10rem]"}`}>
             {/* Imagem */}

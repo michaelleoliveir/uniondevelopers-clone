@@ -1,21 +1,20 @@
-"use client";
+"use client"
 
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { useState } from "react";
+import React, { FC, useState } from 'react';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
-const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+const Header: FC = () => {
+    const [menuOpen, setMenuOpen] = useState < boolean > (false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (): void => {
         setMenuOpen(!menuOpen);
     };
 
     return (
-        <header className="w-full bg-slate-950 shadow-md fixed top-0 left-0 z-50 font-poppins">
-            <div className="container mx-auto flex lg:justify-center justify-between items-center p-3 lg:p-4">
-                {/* logo */}
+        <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-slate-950 font-poppins">
+            <div className="container flex items-center justify-between p-3 mx-auto lg:justify-center lg:p-4">
                 <Link href="/" className="lg:pl-[1rem]">
                     <img
                         src="https://media.graphassets.com/2rObY82rREidExKivdTB"
@@ -24,13 +23,11 @@ const Header = () => {
                     />
                 </Link>
 
-                {/* menu sanduíche */}
-                <button className="lg:hidden text-white text-2xl" onClick={toggleMenu}>
+                <button className="text-2xl text-white lg:hidden" onClick={toggleMenu}>
                     <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
                 </button>
 
-                {/* telas maiores (>= 1300px) */}
-                <nav className="hidden lg:flex space-x-15 text-white">
+                <nav className="hidden text-white lg:flex space-x-15">
                     <Link href="/" className="font-bold text-lg pr-[2rem] pl-[2rem]">
                         Sobre
                     </Link>
@@ -59,7 +56,6 @@ const Header = () => {
                 </Link>
             </div>
 
-            {/* menu mobile */}
             <div className={`lg:hidden ${menuOpen ? "block" : "hidden"} bg-slate-950 p-4`}>
                 <div className="flex flex-col space-y-6">
                     <nav className="flex flex-col space-y-4 pl-7">

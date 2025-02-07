@@ -1,9 +1,11 @@
-import Header from "../components/Header"
-import InitialSection from "../components/InitialSection"
-import IntroductionSection from "../components/IntroductionSection"
-import PilarsSection from "../components/PilarsSection"
-import BenefitsSection from "../components/BenefitsSection"
-import StepsSection from "../components/StepsSection"
+import Header from "@/components/Header"
+import InitialSection from "@/components/InitialSection"
+import IntroductionSection from "@/components/IntroductionSection"
+import PilarsSection from "@/components/PilarsSection"
+import BenefitsSection from "@/components/BenefitsSection"
+import StepsSection from "@/components/StepsSection"
+import SubscribeSection from "@/components/SubscribeSection"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <PilarsSection />
         <BenefitsSection />
         <StepsSection />
+        <SubscribeSection />
+        <Footer />
       </div>
     </>
   );
