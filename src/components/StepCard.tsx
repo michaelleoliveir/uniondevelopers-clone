@@ -19,7 +19,7 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description, isLeft 
                 <span
                     className={`absolute z-10 font-bold text-transparent -translate-y-1/2 
                     text-[7rem] lg:text-[11rem] bg-clip-text bg-gradient-to-b from-blue-500 to-purple-500 top-1/2
-                    ${isLeft ? "left-6 lg:left-1" : "-left-7 lg:-left-18"}`}
+                    ${isLeft ? "left-9 lg:left-1" : "-left-6 lg:-left-18"}`}
                 >
                     {number}
                 </span>

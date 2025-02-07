@@ -6,6 +6,7 @@ import BenefitsSection from "@/components/BenefitsSection"
 import StepsSection from "@/components/StepsSection"
 import SubscribeSection from "@/components/SubscribeSection"
 import Footer from "@/components/Footer"
+import QuestionsSection from "@/components/QuestionsSection"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <BenefitsSection />
         <StepsSection />
         <SubscribeSection />
+        <QuestionsSection />
         <Footer />
       </div>
     </>
