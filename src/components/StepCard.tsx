@@ -27,7 +27,7 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description, isLeft 
                 {/* Card de conteúdo */}
                 <div
                     className={`bg-black p-7 z-0 lg:p-16 lg:pl-[6rem] pl-12 rounded-lg shadow-lg w-[17rem] lg:w-96 relative flex flex-col items-center
-            ${isLeft ? "ml-16 lg:ml-10 shadow-[0px_2px_33px_-11px_#b956e8]" : "mr-16 lg:mr-0 shadow-[0px_2px_33px_-11px_#486efa]"} 
+            ${isLeft ? "ml-16 lg:ml-10 shadow-[0px_2px_20px_-4px_#b956e8]" : "mr-16 lg:mr-0 shadow-[0px_2px_33px_-4px_#486efa]"} 
             md:static`}
                 >
                     <h3 className="text-xl font-bold text-center text-white">{title}</h3>

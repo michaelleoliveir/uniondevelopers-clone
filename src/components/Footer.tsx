@@ -7,7 +7,7 @@ const Footer: FC = () => {
                 <div className="flex flex-col p-9 lg:flex-row lg:justify-between lg:items-start">
                     
                     {/* logo com a descrição */}
-                    <div className="flex flex-col justify-center text-center lg:mt-5 lg:items-start lg:text-left">
+                    <div className="flex flex-col justify-center text-center lg:mt-8 lg:items-start lg:ml-8 lg:text-left">
                         <img 
                             src="https://media.graphassets.com/2rObY82rREidExKivdTB" 
                             alt="Logo Union Developers" 
@@ -19,7 +19,7 @@ const Footer: FC = () => {
                     </div>
 
                     {/* links da página */}
-                    <div className="flex flex-row justify-center gap-10 pt-5 text-left mr-14 mt-9">
+                    <div className="flex flex-row justify-center gap-10 pt-5 lg:mr-[10rem] text-left lg:mt-14 mt-3">
                         <div>
                             <h1 className="text-xl font-bold lg:text-2xl">Saiba mais</h1>
                             <p className="mt-2 cursor-pointer hover:text-gray-400">Sobre</p>

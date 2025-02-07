@@ -5,7 +5,7 @@ const InitialSection: FC = () => {
         <div className="relative flex mb-20 items-top justify-left bg-fundo font-poppins lg:justify-center">
 
             {/* escrita */}
-            <div className="pt-[60px] lg:pt-[130px]">
+            <div className="pt-[60px] lg:pt-[230px]">
                 <div className="flex flex-col lg:flex-row">
                     <div className="text-left ml-[1rem] lg:ml-[2rem] max-w-[40rem] lg:pt-[70px] lg:mr-[190px] mr-[100px]">
                         <h1 className="mb-4 text-2xl font-bold lg:leading-relaxed lg:text-5xl">
