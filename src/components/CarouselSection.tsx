@@ -4,12 +4,11 @@ import React, { FC, useState } from "react";
 import { Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/virtual";
 
 const CarouselSection: FC = () => {
-    // Estado para armazenar o índice do slide central
+
     const [activeIndex, setActiveIndex] = useState(0);
 
     const slides = [
