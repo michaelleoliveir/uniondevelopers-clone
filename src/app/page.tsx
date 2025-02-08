@@ -8,6 +8,7 @@ import SubscribeSection from "@/components/SubscribeSection"
 import Footer from "@/components/Footer"
 import QuestionsSection from "@/components/QuestionsSection"
 import CarouselSection from "@/components/CarouselSection"
+import JoinUsSection from "@/components/JoinUsSection"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <StepsSection />
         <SubscribeSection />
         <CarouselSection />
+        <JoinUsSection />
         <QuestionsSection />
         <Footer />
       </div>
