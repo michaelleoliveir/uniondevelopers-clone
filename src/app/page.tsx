@@ -7,6 +7,7 @@ import StepsSection from "@/components/StepsSection"
 import SubscribeSection from "@/components/SubscribeSection"
 import Footer from "@/components/Footer"
 import QuestionsSection from "@/components/QuestionsSection"
+import CarouselSection from "@/components/CarouselSection"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <BenefitsSection />
         <StepsSection />
         <SubscribeSection />
+        <CarouselSection />
         <QuestionsSection />
         <Footer />
       </div>
