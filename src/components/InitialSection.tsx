@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const InitialSection: FC = () => {
     return (
-        <div className="relative flex mb-20 items-top justify-left bg-fundo font-poppins lg:justify-center">
+        <div style={{ backgroundImage: "url('https://media.graphassets.com/iGXpg7LOQaCPkzm6iOgs')", backgroundSize:"cover" }} className="relative flex mb-20 items-top justify-left font-poppins lg:justify-center">
 
             {/* escrita */}
             <div className="pt-[60px] lg:pt-[230px]">
