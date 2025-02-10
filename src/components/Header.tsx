@@ -53,7 +53,7 @@ const Header: FC = () => {
 
     return (
         <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-slate-950 font-poppins">
-            <div className="w-full flex items-center justify-between p-3 mx-auto lg:justify-center lg:p-4">
+            <div className="w-[100%] flex items-center justify-between p-3 mx-auto lg:justify-center lg:p-4">
                 <Link href="/" className="lg:pl-[1rem]">
                     <img
                         src="https://media.graphassets.com/2rObY82rREidExKivdTB"
@@ -96,7 +96,7 @@ const Header: FC = () => {
             </div>
 
             {/* Menu Mobile */}
-            <div className={`lg:hidden ${menuOpen ? "block" : "hidden"} bg-slate-950 p-4 w-full`}>
+            <div className={`lg:hidden ${menuOpen ? "block" : "hidden"} bg-slate-950 p-4 w-[100%]`}>
                 <div className="flex flex-col items-start space-y-6">
                     <nav className="space-y-4 pl-7">
                         {sections.map((section) => (
