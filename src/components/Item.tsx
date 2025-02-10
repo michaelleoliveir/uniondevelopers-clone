@@ -15,7 +15,7 @@ const Item: FC<ItemProps> = ({ img, titulo, texto, reverse = false }) => {
 
             {/* Textos */}
             <div className={`flex flex-col items-center m-3 ${reverse ? "sm:items-end sm:text-right" : "sm:items-start sm:text-left"}`}>
-                <h3 className="text-xl font-bold lg:text-2xl">{titulo}</h3>
+                <h3 className="ml-5 text-white text-xl font-bold lg:text-2xl">{titulo}</h3>
                 <p className="text-white text-lg font-light lg:w-[38rem] pt-2 p-4">{texto}</p>
             </div>
         </div>

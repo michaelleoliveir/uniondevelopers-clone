@@ -20,7 +20,7 @@ const StepsSection: FC = () => {
 
                 {/* conteúdo */}
                 <div className="flex flex-col">
-                    <p className="text-center p-12 lg:text-2xl max-w-[50rem] mx-auto">
+                    <p className="text-white text-center p-12 lg:text-2xl max-w-[50rem] mx-auto">
                         Conheça as etapas do nosso processo seletivo
                     </p>
 

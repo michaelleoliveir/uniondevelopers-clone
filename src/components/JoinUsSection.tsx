@@ -110,10 +110,10 @@ const JoinUsSection = () => {
         <div id="junte" className="flex items-center justify-center mx-auto mt-10 font-poppins">
             <div className="relative w-[97%] lg:w-[68rem] h-auto lg:h-auto bg-gradient-to-tr from-purple-900 from-0% to-[#06063a] to-100% p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out">
                 <div className="text-center">
-                    <h2 className="mt-4 mb-4 text-3xl font-bold lg:text-4xl">
+                    <h2 className="text-white mt-4 mb-4 text-3xl font-bold lg:text-4xl">
                         Junte-se ao time!
                     </h2>
-                    <p className="mb-6 text-center text-[1.1rem] lg:text-[1.2rem] w-[20rem] lg:w-[30rem] mx-auto">
+                    <p className="text-white mb-6 text-center text-[1.1rem] lg:text-[1.2rem] w-[20rem] lg:w-[30rem] mx-auto">
                         {isFormVisible
                             ? "Ficamos felizes em saber que você tem interesse em fazer parte do Union! Agora é só responder o nosso formulário"
                             : "Tem interesse em participar do Union? Confira abaixo os requisitos para participar:"}
@@ -121,7 +121,7 @@ const JoinUsSection = () => {
 
                     {!isFormVisible ? (
                         <div>
-                            <ul className="space-y-4 mb-6 ml-5 text-left list-none text-[0.8rem] lg:text-[1.2rem]">
+                            <ul className="text-white space-y-4 mb-6 ml-5 text-left list-none text-[0.8rem] lg:text-[1.2rem]">
                                 {[
                                     "Ter mais que 18 anos",
                                     "Ter 1 ano ou mais de estudo em programação",
@@ -154,7 +154,7 @@ const JoinUsSection = () => {
                                 <form onSubmit={handleSubmit(updateData)} className="flex flex-col items-center justify-center text-left space-x-0-y-4">
                                     <h3 className="mb-4 text-xl font-semibold text-center">Formulário de Inscrição</h3>
 
-                                    <label className="flex flex-col text-[1.1rem] w-[90%]">
+                                    <label className="text-white flex flex-col text-[1.1rem] w-[90%]">
                                         Nome Completo
                                         <input
                                             autoComplete="off"
@@ -170,7 +170,7 @@ const JoinUsSection = () => {
                                         )}
                                     </label>
 
-                                    <label className="flex flex-col mt-5 text-[1.1rem] w-[90%]">
+                                    <label className="text-white flex flex-col mt-5 text-[1.1rem] w-[90%]">
                                         Idade
                                         <input
                                             type="number"
@@ -185,7 +185,7 @@ const JoinUsSection = () => {
                                         )}
                                     </label>
 
-                                    <label className="flex flex-col mt-5 text-[1.1rem] w-[90%]">
+                                    <label className="text-white flex flex-col mt-5 text-[1.1rem] w-[90%]">
                                         Email
                                         <input
                                             autoComplete="off"
@@ -201,7 +201,7 @@ const JoinUsSection = () => {
                                         )}
                                     </label>
 
-                                    <label className="flex flex-col mt-5 text-[1.1rem] w-[90%]">
+                                    <label className="text-white flex flex-col mt-5 text-[1.1rem] w-[90%]">
                                         Github
                                         <input
                                             autoComplete="off"
@@ -217,7 +217,7 @@ const JoinUsSection = () => {
                                         )}
                                     </label>
 
-                                    <label className="flex flex-col mt-5 text-[1.1rem] w-[90%]">
+                                    <label className="text-white flex flex-col mt-5 text-[1.1rem] w-[90%]">
                                         Linkedin
                                         <input
                                             autoComplete="off"
@@ -234,7 +234,7 @@ const JoinUsSection = () => {
                                     </label>
 
                                     <div className="text-[1.1rem] flex flex-col items-start ml-20 lg:ml-12 mt-5 w-[100%]">
-                                        <label>Onde você gosta mais de trabalhar?</label>
+                                        <label className="text-white">Onde você gosta mais de trabalhar?</label>
                                         <div>
                                             <input
                                                 className="w-5 h-5 mt-2"
@@ -243,7 +243,7 @@ const JoinUsSection = () => {
                                                 value="front"
                                                 {...register("tech")}
                                             />
-                                            <label htmlFor="front" className="ml-2">Frontend</label>
+                                            <label htmlFor="front" className="ml-2 text-white">Frontend</label>
                                         </div>
                                         <div className="mt-1">
                                             <input
@@ -253,7 +253,7 @@ const JoinUsSection = () => {
                                                 value="back"
                                                 {...register("tech")}
                                             />
-                                            <label htmlFor="back" className="ml-2">Backend</label>
+                                            <label htmlFor="back" className="ml-2 text-white">Backend</label>
                                         </div>
                                         {(errors as Partial<FieldErrors<PersonalFormData>>).tech && (
                                             <p className="mt-2 text-sm text-red-500">
@@ -287,7 +287,7 @@ const JoinUsSection = () => {
 
                                             <div className="items-start ml-3 lg:ml-5">
                                                 <div className="text-[1.1rem] flex flex-col mt-5 w-[100%]">
-                                                    <label className="mb-1">Quanto tempo você estuda programação?</label>
+                                                    <label className="mb-1 text-white">Quanto tempo você estuda programação?</label>
                                                     <div>
                                                         <input
                                                             type="radio"
@@ -295,7 +295,7 @@ const JoinUsSection = () => {
                                                             value="1 ano"
                                                             {...register("time")}
                                                         />
-                                                        <label htmlFor="one" className="ml-2">1 ano</label>
+                                                        <label htmlFor="one" className="ml-2 text-white">1 ano</label>
                                                     </div>
                                                     <div className="mt-1">
                                                         <input
@@ -304,7 +304,7 @@ const JoinUsSection = () => {
                                                             value="2 anos"
                                                             {...register("time")}
                                                         />
-                                                        <label htmlFor="two" className="ml-2">2 anos</label>
+                                                        <label htmlFor="two" className="ml-2 text-white">2 anos</label>
                                                     </div>
                                                     <div className="mt-1">
                                                         <input
@@ -313,7 +313,7 @@ const JoinUsSection = () => {
                                                             value="3 anos"
                                                             {...register("time")}
                                                         />
-                                                        <label htmlFor="three" className="ml-2">3 anos</label>
+                                                        <label htmlFor="three" className="ml-2 text-white">3 anos</label>
                                                     </div>
                                                     <div className="mt-1">
                                                         <input
@@ -322,7 +322,7 @@ const JoinUsSection = () => {
                                                             value="Mais"
                                                             {...register("time")}
                                                         />
-                                                        <label htmlFor="more" className="ml-2">Mais de 3 anos</label>
+                                                        <label htmlFor="more" className="ml-2 text-white">Mais de 3 anos</label>
                                                     </div>
                                                     {(errors as Partial<FieldErrors<TechnicalFormData>>).time && (
                                                         <p className="mt-2 text-sm text-red-500">
@@ -330,7 +330,7 @@ const JoinUsSection = () => {
                                                         </p>
                                                     )}
                                                 </div>
-                                                <label className="flex flex-col items-start mt-5 text-[1.1rem]">
+                                                <label className="flex flex-col items-start text-white mt-5 text-[1.1rem]">
                                                     Link do repositório do seu melhor projeto
                                                     <input
                                                         autoComplete="off"
@@ -345,7 +345,7 @@ const JoinUsSection = () => {
                                                         </p>
                                                     )}
                                                 </label>
-                                                <label className="flex flex-col mt-5 text-[1.1rem]">
+                                                <label className="flex flex-col mt-5 text-white text-[1.1rem]">
                                                     Fale sobre como foi construir esse projeto? Quais foram os aprendizados e dificuldades que teve durante o desenvolvimento?
                                                     <textarea
                                                         autoComplete="off"
@@ -382,10 +382,10 @@ const JoinUsSection = () => {
                                         <div>
                                             {step === 3 ? (
                                                 <form onSubmit={handleSubmit(updateData)} className="flex flex-col items-center justify-center text-left space-x-0-y-4">
-                                                    <h3 className="mb-4 text-xl font-semibold text-center">Sobre você</h3>
+                                                    <h3 className="mb-4 text-xl font-semibold text-center text-white">Sobre você</h3>
 
                                                     <div className="items-start ml-3 lg:ml-5">
-                                                        <label className="flex flex-col items-start mt-5 text-[1.1rem]">
+                                                        <label className="flex flex-col text-white items-start mt-5 text-[1.1rem]">
                                                             Por que você gosta de programar? Qual sua maior motivação?
                                                             <textarea
                                                                 autoComplete="off"
@@ -399,7 +399,7 @@ const JoinUsSection = () => {
                                                                 </p>
                                                             )}
                                                         </label>
-                                                        <label className="flex flex-col items-start mt-5 text-[1rem] lg:text-[1.1rem]">
+                                                        <label className="flex flex-col items-start mt-5 text-[1rem] text-white lg:text-[1.1rem]">
                                                             Como você faz para conseguir cumprir todos as suas responsabilidades do dia a dia?
                                                             <textarea
                                                                 autoComplete="off"
@@ -413,7 +413,7 @@ const JoinUsSection = () => {
                                                                 </p>
                                                             )}
                                                         </label>
-                                                        <label className="flex flex-col items-start mt-5 text-[1.1rem]">
+                                                        <label className="flex flex-col items-start mt-5 text-white text-[1.1rem]">
                                                             Quando você recebe um feedback, como é para você?
                                                             <textarea
                                                                 autoComplete="off"
@@ -427,7 +427,7 @@ const JoinUsSection = () => {
                                                                 </p>
                                                             )}
                                                         </label>
-                                                        <label className="flex flex-col items-start mt-5 text-[1.1rem]">
+                                                        <label className="flex flex-col text-white items-start mt-5 text-[1.1rem]">
                                                             Como você ficou sabendo sobre o Union?
                                                             <textarea
                                                                 autoComplete="off"
@@ -441,7 +441,7 @@ const JoinUsSection = () => {
                                                                 </p>
                                                             )}
                                                         </label>
-                                                        <label className="flex flex-col items-start mt-5 text-[1.1rem]">
+                                                        <label className="flex flex-col text-white items-start mt-5 text-[1.1rem]">
                                                             Por que você quer fazer parte do Union?
                                                             <textarea
                                                                 autoComplete="off"
@@ -455,7 +455,7 @@ const JoinUsSection = () => {
                                                                 </p>
                                                             )}
                                                         </label>
-                                                        <label className="flex flex-col items-start mt-5 text-[1rem]">
+                                                        <label className="flex text-white flex-col items-start mt-5 text-[1rem]">
                                                             Por que você deveria fazer parte do pequeno grupo que vai ter a oportunidade de participar do Union?
                                                             <textarea
                                                                 autoComplete="off"
@@ -472,7 +472,7 @@ const JoinUsSection = () => {
 
                                                         <div className="flex items-center gap-2 mt-5">
                                                             <input className="w-6 h-6" type="checkbox" {...register("termsAccepted")} />
-                                                            <h1 className="text-1xl">Li e concordo com os
+                                                            <h1 className="text-1xl text-white">Li e concordo com os
                                                                 <button className="ml-1 border-b-4" onClick={() => setIsTermOpen(true)}>
                                                                     termos
                                                                 </button>
@@ -507,8 +507,8 @@ const JoinUsSection = () => {
                                                 <div className="flex flex-col items-center mb-12">
                                                     <img className="w-16 h-16" src="https://media.graphassets.com/05PPTFLdTGWFD091Jes1" alt="Ícone de positivo, representando que a inscrição foi realizada com sucesso"></img>
                                                     <div className="items-center mt-8">
-                                                        <h1 className="text-4xl font-bold">Inscrição realizada com sucesso!</h1>
-                                                        <p className="mt-10 w-[28rem] text-center mx-auto">Obrigado <span className="font-bold">{nome}</span> por querer fazer parte do Union, em breve nossa equipe vai entrar em contato pelo seu email <span className="font-bold">{email}</span>, fique atento.</p>
+                                                        <h1 className="text-4xl font-bold text-white">Inscrição realizada com sucesso!</h1>
+                                                        <p className="mt-10 w-[28rem] text-center mx-auto text-white">Obrigado <span className="font-bold">{nome}</span> por querer fazer parte do Union, em breve nossa equipe vai entrar em contato pelo seu email <span className="font-bold">{email}</span>, fique atento.</p>
                                                     </div>
                                                 </div>
                                             )}
@@ -529,19 +529,19 @@ const JoinUsSection = () => {
                         </button>
 
                         <div>
-                            <h2 className="pt-10 pb-4 mb-4 text-3xl font-bold text-center border-b-2">
+                            <h2 className="pt-10 pb-4 mb-4 text-3xl font-bold text-center border-b-2 text-white">
                                 Termos e condições
                             </h2>
                         </div>
 
                         <div>
-                            <p className="text-[1.2rem] font-bold mb-4">
+                            <p className="text-[1.2rem] font-bold mb-4 text-white">
                                 Ao prosseguir com o preenchimento do formulário de inscrição, você concorda com os seguintes termos e condições do Union:
                             </p>
                         </div>
 
                         <div className="max-h-[50vh] p-2">
-                            <ol className="pb-8 space-y-4 list-decimal">
+                            <ol className="pb-8 space-y-4 list-decimal text-white">
                                 <li>
                                     <h4 className="font-bold text-[1.2rem]">Autorização para coleta de informações:</h4>
                                     Ao fornecer suas informações pessoais no formulário de inscrição, você autoriza o Union a coletar, armazenar e utilizar os dados fornecidos para fins de avaliação de inscrição e para a organização das atividades no âmbito do programa. Comprometemo-nos a proteger a privacidade e confidencialidade dos seus dados, em conformidade com as leis aplicáveis de proteção de dados.

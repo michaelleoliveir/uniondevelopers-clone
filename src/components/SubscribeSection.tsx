@@ -10,7 +10,7 @@ const SubscribeSection: FC = () => {
             />
 
             <div className='flex flex-col items-center justify-center text-center m-7'>
-                <h1 className='text-3xl font-bold w-[20rem] lg:w-[35rem]'>
+                <h1 className='text-white text-3xl font-bold w-[20rem] lg:w-[35rem]'>
                     Vivência na prática, ambiente imersivo, desafios e muito mais!
                 </h1>
                 <p className='w-[16rem] pt-6 text-3xl font-bold text-red-500'>

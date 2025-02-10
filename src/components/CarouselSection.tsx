@@ -73,8 +73,8 @@ const CarouselSection: FC = () => {
                             slidesPerView={1}
                             centeredSlides={true}
                             loop={true}
-                            onSwiper={(swiper) => setActiveIndex(swiper.realIndex)}
-                            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                            onSwiper={(swiper: { realIndex: React.SetStateAction<number>; }) => setActiveIndex(swiper.realIndex)}
+                            onSlideChange={(swiper: { realIndex: React.SetStateAction<number>; }) => setActiveIndex(swiper.realIndex)}
                             style={{ width: "80rem" }}
                             breakpoints={{
                                 "1200": { slidesPerView: 3 },
@@ -94,9 +94,9 @@ const CarouselSection: FC = () => {
                                                 alt={`Slide ${index + 1}`}
                                                 className="object-cover w-32 h-32 mb-4 border-4 border-indigo-700 rounded-full"
                                             />
-                                            <h1 className="pb-4 text-2xl font-bold">{slide.heading}</h1>
+                                            <h1 className="text-white pb-4 text-2xl font-bold">{slide.heading}</h1>
                                             <p
-                                                className={`text-center
+                                                className={`text-white text-center
                             ${index === activeIndex ? "scale-100 shadow-lg text-[1.1rem]" : "scale-90 text-1xl"}`}
                                             >
                                                 {slide.text}
@@ -115,7 +115,7 @@ const CarouselSection: FC = () => {
                                                     alt="LinkedIn"
                                                     className="w-8 h-8"
                                                 />
-                                                <h2 className="text-sm font-semibold">LinkedIn</h2>
+                                                <h2 className="text-white text-sm font-semibold">LinkedIn</h2>
                                             </a>
                                             <a
                                                 href={slide.github}
@@ -128,7 +128,7 @@ const CarouselSection: FC = () => {
                                                     alt="GitHub"
                                                     className="w-8 h-8"
                                                 />
-                                                <h2 className="text-sm font-semibold">GitHub</h2>
+                                                <h2 className="text-white text-sm font-semibold">GitHub</h2>
                                             </a>
                                         </div>
                                     </div>

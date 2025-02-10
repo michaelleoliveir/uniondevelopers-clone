@@ -12,7 +12,7 @@ const PilarsSection: FC = () => {
                         </span>
                     </div>
                     <div className="flex flex-col">
-                        <p className="p-5 mb-10 font-light text-center lg:text-2xl">
+                        <p className="p-5 text-white mb-10 font-light text-center lg:text-2xl">
                             Os pilares que sustentam o formato inovador de aprendizagem do Union é a junção de incríveis metodologias!
                         </p>
                         <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 px-5 mt-10 sm:grid-cols-2 lg:grid-cols-3">

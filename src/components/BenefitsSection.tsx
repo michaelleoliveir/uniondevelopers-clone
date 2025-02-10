@@ -15,7 +15,7 @@ const BenefitsSection: FC = () => {
                     <div className="border-t-4 border-blue-500 w-[36%]"></div>
                 </div>
                 <div className="flex flex-col">
-                    <p className="text-center p-10 lg:text-2xl font-light max-w-[40rem] mx-auto">
+                    <p className="text-center text-white p-10 lg:text-2xl font-light max-w-[40rem] mx-auto">
                         Conheça os benefícios incríveis que o Union proporciona para seus membros!
                     </p>
                     <Item img="https://media.graphassets.com/qssZQEUSEaAQoM6oznCw" titulo="Preparação para o mercado" texto="Os membros são equipados com uma compreensão profunda das práticas de mercado, permitindo-lhes ingressar no setor com confiança e conhecimento." />
