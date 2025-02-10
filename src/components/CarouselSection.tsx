@@ -1,14 +1,15 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { Virtual } from "swiper/modules";
+import { Virtual, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/virtual";
+import "swiper/css/navigation";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CarouselSection: FC = () => {
-
     const [activeIndex, setActiveIndex] = useState(0);
 
     const slides = [
@@ -50,96 +51,90 @@ const CarouselSection: FC = () => {
     ];
 
     return (
-        <div id="carrossel" className="mx-auto flex items-center justify-center mt-[90px]">
-            <div className="relative flex items-center justify-center w-[50rem] p-6 lg:h-full lg:w-full bg-fundo rounded-2xl pb-9 font-poppins">
-                <div className="absolute -top-[-17px] lg:-top-[0.01px] left-1/2 transform -translate-x-1/2 px-3 bg-fundo z-10 flex items-center">
-                    <span className="text-lg font-bold text-transparent lg:text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
-                        Depoimentos
-                    </span>
-                </div>
-                <div className="absolute left-1/2 transform -translate-x-[50%] top-[30px] flex justify-between w-full lg:px-[30px]">
-                    <div className="border-t-4 border-purple-600 w-[36%]"></div>
-                    <div className="border-t-4 border-blue-500 w-[36%]"></div>
-                </div>
-                <div className="flex flex-col">
-                    <p className="text-center p-10 mt-5 lg:text-2xl font-light w-[20rem] lg:w-[40rem] mx-auto">
-                        Veja o que quem já passou por essa experiência fala
-                    </p>
-
-                    <div className="m-0 p-0 lg:p-6 lg:mt-3 w-[20rem] lg:w-full">
-                        <Swiper
-                            modules={[Virtual]}
-                            spaceBetween={40}
-                            slidesPerView={1}
-                            centeredSlides={true}
-                            loop={true}
-                            onSwiper={(swiper: { realIndex: React.SetStateAction<number>; }) => setActiveIndex(swiper.realIndex)}
-                            onSlideChange={(swiper: { realIndex: React.SetStateAction<number>; }) => setActiveIndex(swiper.realIndex)}
-                            style={{ width: "80rem" }}
-                            breakpoints={{
-                                "1200": { slidesPerView: 3 },
-                                1000: { slidesPerView: 1 }
-                            }}
-                        >
-                            {slides.map((slide, index) => (
-                                <SwiperSlide key={index} virtualIndex={index}>
-                                    <div
-                                        className={`flex flex-col items-center justify-center transition-all duration-300 ease-in-out p-6 border-2 border-indigo-700 rounded-lg shadow-md
-                    lg:w-[25rem] w-[20rem] h-[38rem] 
-                    ${index === activeIndex ? "scale-100 shadow-lg" : "scale-75"}`}
-                                    >
-                                        <div className="flex flex-col items-center">
-                                            <img
-                                                src={slide.image}
-                                                alt={`Slide ${index + 1}`}
-                                                className="object-cover w-32 h-32 mb-4 border-4 border-indigo-700 rounded-full"
-                                            />
-                                            <h1 className="text-white pb-4 text-2xl font-bold">{slide.heading}</h1>
-                                            <p
-                                                className={`text-white text-center
-                            ${index === activeIndex ? "scale-100 shadow-lg text-[1.1rem]" : "scale-90 text-1xl"}`}
-                                            >
-                                                {slide.text}
-                                            </p>
-                                        </div>
-
-                                        <div className="flex flex-row items-center justify-center gap-4 mt-7">
-                                            <a
-                                                href={slide.linkedin}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex flex-col items-center text-center"
-                                            >
-                                                <img
-                                                    src="https://media.graphassets.com/y4KMQdygSH6uZx46pxjU"
-                                                    alt="LinkedIn"
-                                                    className="w-8 h-8"
-                                                />
-                                                <h2 className="text-white text-sm font-semibold">LinkedIn</h2>
-                                            </a>
-                                            <a
-                                                href={slide.github}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex flex-col items-center text-center"
-                                            >
-                                                <img
-                                                    src="https://media.graphassets.com/4lDgbi8FQpq8QYSiranx"
-                                                    alt="GitHub"
-                                                    className="w-8 h-8"
-                                                />
-                                                <h2 className="text-white text-sm font-semibold">GitHub</h2>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
-                    </div>
-                </div>
+        <section id="carrossel" className="flex flex-col items-center px-6 py-16 font-poppins">
+            {/* Título */}
+            <div className="flex items-center justify-center w-full mb-6">
+                <span className="hidden md:block absolute left-0 w-[32%] h-[3px] rounded-[20px] bg-gradient-to-bl from-[rgb(0,72,254)] to-[rgb(133,29,134)]"></span>
+                <h2 className="text-[32px] md:text-[40px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[rgb(133,29,134)] to-[rgb(0,72,254)] mx-4">
+                    Depoimentos
+                </h2>
+                <span className="hidden md:block absolute right-0 w-[32%] h-[3px] rounded-[20px] bg-gradient-to-bl from-[rgb(133,29,134)] to-[rgb(0,72,254)]"></span>
             </div>
-        </div>
+
+            <p className="text-[18px] md:text-[24px] text-white font-400 text-center max-w-2xl mb-8">
+                Veja o que quem já passou por essa experiência fala
+            </p>
+
+            {/* 🔹 Carousel */}
+            <div className="relative w-full max-w-[1200px]">
+                <Swiper
+                    modules={[Virtual, Navigation]}
+                    slidesPerView={"auto"}
+                    centeredSlides={true}
+                    spaceBetween={35}
+                    initialSlide={Math.floor(slides.length / 2)}
+                    loop={true}
+                    navigation={{
+                        prevEl: ".swiper-button-prev",
+                        nextEl: ".swiper-button-next",
+                    }}
+                    onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                    breakpoints={{
+                        768: { slidesPerView: 1 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                    className="relative"
+                >
+                    {slides.map((slide, index) => (
+                        <SwiperSlide key={index} className="flex items-center justify-center mt-10">
+                            <div
+                                className={`relative max-w-md rounded-lg bg-gradient-to-tr from-[rgb(133,29,134)] to-[rgb(0,72,254)] p-0.5 shadow-lg transition-all duration-300 mx-auto
+                            ${index === activeIndex ? "w-[328px] lg:w-[398px] lg:h-[732px] mt-0" : "w-[280px] h-[630px] mt-[50px]"}`}
+                            >
+                                <div className="flex flex-col items-center justify-between h-full rounded-lg bg-[#1F1D2B] text-white p-6">
+                                    <div className="flex justify-center mt-10">
+                                        <img
+                                            src={slide.image}
+                                            alt={slide.heading}
+                                            className="object-cover w-32 h-32 rounded-full"
+                                        />
+                                    </div>
+                                    <h3 className="text-[20px] md:text-[24px] font-bold text-center mt-4">{slide.heading}</h3>
+                                    <p className={`text-gray-300 text-center mt-2 ${index === activeIndex ? "text-[1.3rem]" : "text-sm"}`}>{slide.text}</p>
+                                    <div className="flex items-center justify-center mt-4 space-x-4 text-gray-400">
+                                        <a href={slide.linkedin} target="_blank" rel="noopener noreferrer">
+                                            <img
+                                                src="https://media.graphassets.com/y4KMQdygSH6uZx46pxjU"
+                                                alt="LinkedIn"
+                                                className="h-11 w-11"
+                                            />
+                                            <p className="text-xs">LinkedIn</p>
+                                        </a>
+                                        <a href={slide.github} target="_blank" rel="noopener noreferrer">
+                                            <img
+                                                src="https://media.graphassets.com/4lDgbi8FQpq8QYSiranx"
+                                                alt="GitHub"
+                                                className="h-11 w-11"
+                                            />
+                                            <p className="text-xs">GitHub</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                    ))}
+                </Swiper>
+
+                {/* 🔹 Botões de Navegação */}
+                <button className="swiper-button-prev absolute left-[-70px] top-1/2 transform -translate-y-1/2 z-20 text-purple-400 hover:text-white">
+                    <ChevronLeft size={32} />
+                </button>
+                <button className="swiper-button-next absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-20 text-purple-400 hover:text-white">
+                    <ChevronRight size={32} />
+                </button>
+            </div>
+        </section>
     );
 };
 

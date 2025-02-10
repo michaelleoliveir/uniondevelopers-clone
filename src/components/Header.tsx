@@ -72,7 +72,7 @@ const Header: FC = () => {
                         <button
                             key={section.id}
                             onClick={() => handleScrollToSection(section.id)}
-                            className="font-bold text-lg pr-[1.4rem] pl-[1.4rem]"
+                            className="text-white font-bold text-lg pr-[1.4rem] pl-[1.4rem]"
                         >
                             <span
                                 className={`${
