@@ -3,7 +3,7 @@ import StepCard from './StepCard';
 
 const StepsSection: FC = () => {
     return (
-        <div className="mx-auto flex items-center justify-center mt-[50px] w-auto">
+        <div id='passos' className="mx-auto flex items-center justify-center mt-[50px] w-auto">
             <div className="relative flex items-center justify-center w-full h-full p-6 bg-fundo rounded-2xl pb-9 font-poppins">
                 {/* título */}
                 <div className="absolute -top-[-17px] lg:-top-[0.01px] left-1/2 transform -translate-x-1/2 px-3 bg-fundo z-10 flex items-center">

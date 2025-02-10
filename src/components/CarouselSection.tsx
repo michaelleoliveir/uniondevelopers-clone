@@ -50,7 +50,7 @@ const CarouselSection: FC = () => {
     ];
 
     return (
-        <div className="mx-auto flex items-center justify-center mt-[90px]">
+        <div id="carrossel" className="mx-auto flex items-center justify-center mt-[90px]">
             <div className="relative flex items-center justify-center w-[50rem] p-6 lg:h-full lg:w-full bg-fundo rounded-2xl pb-9 font-poppins">
                 <div className="absolute -top-[-17px] lg:-top-[0.01px] left-1/2 transform -translate-x-1/2 px-3 bg-fundo z-10 flex items-center">
                     <span className="text-lg font-bold text-transparent lg:text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
@@ -77,7 +77,7 @@ const CarouselSection: FC = () => {
                             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                             style={{ width: "80rem" }}
                             breakpoints={{
-                                1200: { slidesPerView: 3 },
+                                "1200": { slidesPerView: 3 },
                                 1000: { slidesPerView: 1 }
                             }}
                         >

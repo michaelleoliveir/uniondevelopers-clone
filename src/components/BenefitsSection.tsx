@@ -3,7 +3,7 @@ import Item from "./Item";
 
 const BenefitsSection: FC = () => {
     return (
-        <div className="mx-auto flex items-center justify-center mt-[90px] w-auto">
+        <div id='beneficio' className="mx-auto flex items-center justify-center mt-[90px] w-auto">
             <div className="relative flex items-center justify-center w-full h-full p-6 bg-fundo rounded-2xl pb-9 font-poppins">
                 <div className="absolute -top-[-17px] lg:-top-[0.01px] left-1/2 transform -translate-x-1/2 px-3 bg-fundo z-10 flex items-center">
                     <span className="text-lg font-bold text-transparent lg:text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">

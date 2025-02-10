@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const PilarsSection: FC = () => {
     return (
-        <div className="flex items-center justify-center mx-auto mt-10">
+        <div id='pilares' className="flex items-center justify-center mx-auto mt-10">
             <div className="relative rounded-2xl bg-gradient-to-r from-purple-600 via-blue-500 to-pink-600 p-1 ml-5 mr-5 lg:ml-[10rem] lg:mr-[10rem] lg:mt-[100px]">
                 <div className="relative flex items-center justify-center w-full h-full p-6 bg-fundo rounded-2xl pb-9 font-poppins">
                     <div className="absolute z-10 px-3 transform -translate-x-1/2 -top-5 left-1/2 bg-fundo">

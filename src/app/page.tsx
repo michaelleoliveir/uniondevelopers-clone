@@ -9,22 +9,25 @@ import Footer from "@/components/Footer"
 import QuestionsSection from "@/components/QuestionsSection"
 import CarouselSection from "@/components/CarouselSection"
 import JoinUsSection from "@/components/JoinUsSection"
+import { SectionProvider } from "@/components/SectionContext"
 
 export default function Home() {
   return (
     <>
       <div className="bg-fundo">
-        <Header />
-        <InitialSection />
-        <IntroductionSection />
-        <PilarsSection />
-        <BenefitsSection />
-        <StepsSection />
-        <SubscribeSection />
-        <CarouselSection />
-        <JoinUsSection />
-        <QuestionsSection />
-        <Footer />
+        <SectionProvider>
+          <Header />
+          <InitialSection />
+          <IntroductionSection />
+          <PilarsSection />
+          <BenefitsSection />
+          <StepsSection />
+          <SubscribeSection />
+          <CarouselSection />
+          <JoinUsSection />
+          <QuestionsSection />
+          <Footer />
+        </SectionProvider>
       </div>
     </>
   );

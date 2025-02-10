@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const SubscribeSection: FC = () => {
     return (
-        <div className='flex flex-col items-center justify-center lg:flex-row font-poppins'>
+        <div id='inscricao' className='flex flex-col items-center justify-center lg:flex-row font-poppins'>
             <img 
                 src="https://media.graphassets.com/WayysMB8RQyrgcahBMQs" 
                 alt="" 
