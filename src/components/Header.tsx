@@ -97,8 +97,8 @@ const Header: FC = () => {
 
             {/* Menu Mobile */}
             <div className={`lg:hidden ${menuOpen ? "block" : "hidden"} bg-slate-950 p-4`}>
-                <div className="flex flex-col space-y-6">
-                    <nav className="flex flex-col space-y-4 pl-7">
+                <div className="flex flex-col items-start space-y-6">
+                    <nav className="space-y-4 pl-7">
                         {sections.map((section) => (
                             <button
                                 key={section.id}
@@ -110,7 +110,7 @@ const Header: FC = () => {
                                         activeSection === section.id
                                             ? "bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                                             : "text-white"
-                                    }`}
+                                    }text-left`}
                                 >
                                     {section.name}
                                 </span>
