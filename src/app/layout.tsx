@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${poppins.variable} antialiased`}>
-        <main className="pt-16">
+        <main className="pt-16 overflow-hidden">
           {children}
         </main>
       </body>

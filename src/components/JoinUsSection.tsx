@@ -110,7 +110,7 @@ const JoinUsSection = () => {
         <div id="junte" className="flex items-center justify-center mx-auto mt-10 font-poppins">
             <div className="relative w-[97%] lg:w-[68rem] h-auto lg:h-auto bg-gradient-to-tr from-purple-900 from-0% to-[#06063a] to-100% p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out">
                 <div className="text-center">
-                    <h2 className="text-white mt-4 mb-4 text-3xl font-bold lg:text-4xl">
+                    <h2 className="mt-4 mb-4 text-3xl font-bold text-white lg:text-4xl">
                         Junte-se ao time!
                     </h2>
                     <p className="text-white mb-6 text-center text-[1.1rem] lg:text-[1.2rem] w-[20rem] lg:w-[30rem] mx-auto">
@@ -233,7 +233,7 @@ const JoinUsSection = () => {
                                         )}
                                     </label>
 
-                                    <div className="text-[1.1rem] flex flex-col items-start ml-20 lg:ml-12 mt-5 w-[100%]">
+                                    <div className="text-[1.1rem] flex flex-col items-start ml-2 lg:ml-1 mt-5 w-[90%]">
                                         <label className="text-white">Onde você gosta mais de trabalhar?</label>
                                         <div>
                                             <input
@@ -472,7 +472,7 @@ const JoinUsSection = () => {
 
                                                         <div className="flex items-center gap-2 mt-5">
                                                             <input className="w-6 h-6" type="checkbox" {...register("termsAccepted")} />
-                                                            <h1 className="text-1xl text-white">Li e concordo com os
+                                                            <h1 className="text-white text-1xl">Li e concordo com os
                                                                 <button className="ml-1 border-b-4" onClick={() => setIsTermOpen(true)}>
                                                                     termos
                                                                 </button>
@@ -507,8 +507,8 @@ const JoinUsSection = () => {
                                                 <div className="flex flex-col items-center mb-12">
                                                     <img className="w-16 h-16" src="https://media.graphassets.com/05PPTFLdTGWFD091Jes1" alt="Ícone de positivo, representando que a inscrição foi realizada com sucesso"></img>
                                                     <div className="items-center mt-8">
-                                                        <h1 className="text-4xl font-bold text-white">Inscrição realizada com sucesso!</h1>
-                                                        <p className="mt-10 w-[28rem] text-center mx-auto text-white">Obrigado <span className="font-bold">{nome}</span> por querer fazer parte do Union, em breve nossa equipe vai entrar em contato pelo seu email <span className="font-bold">{email}</span>, fique atento.</p>
+                                                        <h1 className="text-2xl font-bold text-white lg:text-4xl">Inscrição realizada com sucesso!</h1>
+                                                        <p className="mt-10 w-[20rem ]lg:w-[28rem] text-center mx-auto text-white">Obrigado <span className="font-bold">{nome}</span> por querer fazer parte do Union, em breve nossa equipe vai entrar em contato pelo seu email <span className="font-bold">{email}</span>, fique atento.</p>
                                                     </div>
                                                 </div>
                                             )}
@@ -529,7 +529,7 @@ const JoinUsSection = () => {
                         </button>
 
                         <div>
-                            <h2 className="pt-10 pb-4 mb-4 text-3xl font-bold text-center border-b-2 text-white">
+                            <h2 className="pt-10 pb-4 mb-4 text-3xl font-bold text-center text-white border-b-2">
                                 Termos e condições
                             </h2>
                         </div>
@@ -541,7 +541,7 @@ const JoinUsSection = () => {
                         </div>
 
                         <div className="max-h-[50vh] p-2">
-                            <ol className="pb-8 space-y-4 list-decimal text-white">
+                            <ol className="pb-8 space-y-4 text-white list-decimal">
                                 <li>
                                     <h4 className="font-bold text-[1.2rem]">Autorização para coleta de informações:</h4>
                                     Ao fornecer suas informações pessoais no formulário de inscrição, você autoriza o Union a coletar, armazenar e utilizar os dados fornecidos para fins de avaliação de inscrição e para a organização das atividades no âmbito do programa. Comprometemo-nos a proteger a privacidade e confidencialidade dos seus dados, em conformidade com as leis aplicáveis de proteção de dados.

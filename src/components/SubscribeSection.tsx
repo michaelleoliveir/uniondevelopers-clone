@@ -1,6 +1,18 @@
+"use client"
+
 import React, { FC } from 'react';
 
 const SubscribeSection: FC = () => {
+    const handleScrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop - 80,
+                behavior: "smooth",
+            });
+        }
+    };
+    
     return (
         <div id='inscricao' className='flex flex-col items-center justify-center lg:flex-row font-poppins'>
             <img 
@@ -17,7 +29,7 @@ const SubscribeSection: FC = () => {
                     Inscreva-se já! Vagas limitadas
                 </p>
 
-                <button className="bg-gradient-to-r from-purple-600 to-blue-500 text-white lg:px-[100px] px-[80px] lg:px-15 lg:py-5 py-3 rounded-lg font-bold lg:text-2xl mt-6">
+                <button onClick={() => handleScrollToSection("junte")} className="bg-gradient-to-r from-purple-600 to-blue-500 text-white lg:px-[100px] px-[80px] lg:px-15 lg:py-5 py-3 rounded-lg font-bold lg:text-2xl mt-6">
                     Inscrever-se agora
                 </button>
             </div>

@@ -89,7 +89,7 @@ const CarouselSection: FC = () => {
                         <SwiperSlide key={index} className="flex items-center justify-center mt-10">
                             <div
                                 className={`relative max-w-md rounded-lg bg-gradient-to-tr from-[rgb(133,29,134)] to-[rgb(0,72,254)] p-0.5 shadow-lg transition-all duration-300 mx-auto
-                            ${index === activeIndex ? "w-[328px] lg:w-[398px] lg:h-[732px] mt-0" : "w-[280px] h-[630px] mt-[50px]"}`}
+                            ${index === activeIndex ? "w-[240px] lg:w-[398px] lg:h-[732px] mt-0" : "w-[280px] h-[630px] mt-[50px]"}`}
                             >
                                 <div className="flex flex-col items-center justify-between h-full rounded-lg bg-[#1F1D2B] text-white p-6">
                                     <div className="flex justify-center mt-10">
@@ -100,7 +100,7 @@ const CarouselSection: FC = () => {
                                         />
                                     </div>
                                     <h3 className="text-[20px] md:text-[24px] font-bold text-center mt-4">{slide.heading}</h3>
-                                    <p className={`text-gray-300 text-center mt-2 ${index === activeIndex ? "text-[1.3rem]" : "text-sm"}`}>{slide.text}</p>
+                                    <p className={`text-gray-300 text-center mt-2 ${index === activeIndex ? "lg:text-[1.3rem] text-[0.9rem] w-[12rem] lg:w-[22rem]" : "text-sm"}`}>{slide.text}</p>
                                     <div className="flex items-center justify-center mt-4 space-x-4 text-gray-400">
                                         <a href={slide.linkedin} target="_blank" rel="noopener noreferrer">
                                             <img

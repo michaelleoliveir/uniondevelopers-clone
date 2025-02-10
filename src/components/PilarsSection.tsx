@@ -12,10 +12,10 @@ const PilarsSection: FC = () => {
                         </span>
                     </div>
                     <div className="flex flex-col">
-                        <p className="p-5 text-white mb-10 font-light text-center lg:text-2xl">
+                        <p className="p-5 mb-10 font-light text-center text-white lg:text-2xl">
                             Os pilares que sustentam o formato inovador de aprendizagem do Union é a junção de incríveis metodologias!
                         </p>
-                        <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 px-5 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid w-full max-w-screen-lg grid-cols-1 gap-6 px-5 mt-3 lg:mt-5 sm:grid-cols-2 lg:grid-cols-3">
                             <Cards titulo={"Ativa"} texto={"Metodologia ativa é uma abordagem educacional que coloca o aluno como protagonista, onde ele é o responsável por ir atrás dos conhecimentos necessários, ficando o professor como um mentor, que vai mostrar o caminho para que ele possa ter sucesso no aprendizado."}/>
                             <Cards titulo={"Andragogia"} texto={"É uma metodologia de ensino para adultos, que tem mais liberdade e colaboração, permitindo que o aluno decida quando, como e o que estudar, tornando o processo de aprendizagem mais sólido e eficaz, a andragogia valoriza a autonomia e a experiência dos adultos como base para a aprendizagem."}/>
                             <Cards titulo={"Ágil"} texto={"A metodologia ágil é uma metodologia que estimula a colaboração entre o time, permitindo que tenha uma visão mais transparente, liberdade para fazer escolhas e tomar decisões, buscando a melhora continua entre os membros, os processos e a qualidade geral do trabalho."} />
